@@ -35,8 +35,8 @@
                             width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
                      -->
                      <img 
-                     srcset="images/pages/FirstImage.png" 
-                     src="images/pages/FirstImage.png" 
+                     srcset="/images/pages/FirstImage.png" 
+                     src="/images/pages/FirstImage.png" 
                      width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />a
                 </div>
             </div>
@@ -67,10 +67,9 @@
                         <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
                         {{ end }}
                         {{ end }}
-                         <!-- 
-                            
-                            <img imgh src="images/pages/SecondImage.webp" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
-                          -->
+                        <!-- 
+                            <img imgh src="/images/pages/SecondImage.webp" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        -->
                           
                     </div>
                 </div>
@@ -137,12 +136,14 @@
                 </div>
                 <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
                     <div class="overflow-hidden shadow-xl rounded-2xl">
-                        <!-- {{ $p1image := resources.Get .Site.Params.P2.Image }}
-                        {{ with $p1image }}
-                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
-                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
-                        {{ end }}
-                        {{ end }} -->
+                        <!-- 
+                            {{ $p1image := resources.Get .Site.Params.P2.Image }}
+                            {{ with $p1image }}
+                            {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
+                            <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                            {{ end }}
+                            {{ end }} 
+                        -->
                     </div>
                 </div>
             </div>
