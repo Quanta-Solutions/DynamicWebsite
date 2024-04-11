@@ -61,6 +61,7 @@ languages:
       title: "Quanta"
       TitlePage: "Quanta - Optimisez et Automatisez vos Processus d'Entreprise"
       moto: "Reclaim Your Time"
+      FirstImage: "images/pages/FirstImage.png"
       DescriptionSEO: "Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
         vos processus business afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
       description:
