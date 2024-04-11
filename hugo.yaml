@@ -74,7 +74,7 @@ languages:
       p1:
         heading: "Nos Services"
         SubHeading: ""
-        image: "images/pages/SecondImage.webp"
+        image: "images/pages/SecondImage.png"
         content:
           - SubHeading: "Automation/Integration des processus"
           - text: "Nos solutions intelligentes permettent de simplifier vos processus commerciaux et permettent d'intégrer différents systèmes et applications."
