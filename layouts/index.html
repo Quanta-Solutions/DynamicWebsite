@@ -23,7 +23,11 @@
                 </div>
             </div>
                 <div class="col-span-6">
-                    {{ $hero := resources.GetMatch "images/pages/FirstImage.png" }}
+                    <img srcset=" {{ .Site.Params.FirstImage }}" 
+                    src=" {{ .Site.Params.FirstImage }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                  
+                     <!-- 
+                          {{ $hero := resources.GetMatch "images/pages/FirstImage.png" }}
 
                     {{ $thumb := ($hero.Fill "400x400 webp q90") }}
                     {{ $large := ($hero.Fill "576x576 webp q90") }}
@@ -31,6 +35,8 @@
                     <img srcset="
                         {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
                         {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                  
+                    -->
                 </div>
             </div>
         </div>
@@ -54,13 +60,18 @@
                 </div>
                 <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
                     <div class="overflow-hidden shadow-xl rounded-2xl">
-                        {{ $p1image := resources.Get .Site.Params.P1.Image }}
+                        <img srcset=" {{ .Site.Params.P1.SecondImage }}" 
+                    src=" {{ .Site.Params.P1.SecondImage }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                        <!-- 
+                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        
+                            {{ $p1image := resources.Get .Site.Params.P1.Image }}
                             {{ with $p1image }}
                             {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
                             <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
                             {{ end }}
                         {{ end }}
-                        
+                         -->
                        
                     </div>
                 </div>
