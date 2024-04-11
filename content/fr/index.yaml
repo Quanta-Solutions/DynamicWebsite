@@ -1,0 +1,162 @@
+baseURL: ''
+title: Quanta
+languageCode: fr-FR
+DefaultContentLanguage: fr
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  author: Marullo Luca
+  moto: "testFr"
+  title: "Quanta"
+  description: "Empower your business with Quanta's smart tools, designed to streamline your processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
+  disable_theme_toggle: false
+  disable_stay_uptodate: false
+
+  p1:
+    heading: "Our mission"
+    SubHeading: "Enhance productivity"
+    image: "images/pages/SecondImage.webp"
+    content:
+      - text: "At Quanta, our mission is to revolutionize enterprise operations through the power of automation, envisioning technology as a vital partner in driving business success. Our commitment is to provide innovative, user-friendly, and efficient automation solutions that optimize operations, reduce manual workload, and enhance productivity."
+      - text: "In today's fast-paced business environment, we understand that time is invaluable. Therefore, we focus on creating precision tools that not only perform tasks efficiently but also open new avenues for innovation and growth. Recognizing each business's uniqueness, we offer personalized solutions that streamline processes by eliminating unnecessary human interventions, leading to more effective automation and a smoother, more reliable operational flow."
+      - text: "As a partner in progress, Quanta is dedicated to empowering businesses of all sizes to compete and thrive, helping them to achieve their full potential through continuous innovation and excellence."
+  p2:
+    heading: "Why us."
+    image: "images/pages/Logotest.png"
+    SubHeading: "Long term partner"
+    Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
+  
+    content:
+      - text: "Free from budget overruns and unnecessary extended support, our promise is a smooth and satisfying experience. We dedicate ample time to thoroughly comprehend your requirements and aspirations, ensuring that the outcomes exceed your expectations. This meticulous approach enables us to guarantee the superior quality of our robotic solutions and the services we provide, aligning perfectly with your vision of success."
+  p3:
+    heading: "Contact"
+    content:
+      - text: "Ready to explore how automation can transform your business? Reach out to us at Quanta — we're here to listen, advise, and guide you towards a smarter, more efficient future. Contact us today!"
+    action: "#"
+    label: "Email address"
+    placeholder: "Enter your email"
+    button: "Notify me"
+
+  social_media:
+    github:
+      enabled: false
+      url: 'https://github.com/nusserstudios'
+    facebook:
+      enabled: false
+      url: 'https://facebook.com/nusserstudios'
+    instagram:
+      enabled: false
+      url: 'https://instagram.com/nusserstudios'
+    twitter:
+      enabled: false
+      url: '@nusserstudios'
+    
+
+menu:
+  main:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+  categories:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+  dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    disable: true
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: true
+    simple: false
+  twitter:
+    disable: true
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: true
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: true
+    privacyEnhanced: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"

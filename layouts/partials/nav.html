@@ -1,0 +1,56 @@
+<div id="QuantaNav"class="top-0 z-50 w-full text-gray-200 bg-gray-900 border-2 border-gray-900 border-b-stone-200/10 sticky">
+    <div class="flex flex-col max-w-full px-4 mx-auto md:items-center md:flex-row md:px-6 lg:px-8">
+        <div class="w-full flex justify-between p-4">
+            <a href="/" class="flex text-gray-100 transition duration-1000 ease-in-out group">
+                <!-- public/image-->
+                <img src="/images/LogoWhiteVersion.png"
+                     class="transition-opacity h-10 w-9 "
+                     alt="Site Logo" />
+                <div
+                     class=" ml-3 text-Quanta-title font-medium tracking-tight text-Quanta-title dark:text-Quanta-title transition-colors">
+                    {{ .Site.Title }}
+                </div>
+            </a>
+            <div class="flex flex-row text-gray-100 transition duration-1000 ease-in-out group">
+                <a class="p-2 text-sm text-Quanta-title rounded-lg md:ml-2 max-w-5" href="{{ .Site.Params.gotoFrUrl }}">
+                    <img class="language-flag"
+                    id="french"
+                        src="https://flagcdn.com/h60/fr.jpg"
+                        alt="Français">
+                
+                </a>
+                <a class="p-2 text-sm text-Quanta-title rounded-lg md:ml-2 max-w-5" href="{{ .Site.Params.gotoEnUrl }}">
+                    <img
+                     class="language-flag"
+                     id="english"
+                        src="https://flagcdn.com/h60/gb.jpg"
+                        alt="English">
+                
+                </a>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Function to determine the current language from the URL path
+    function getCurrentLanguage() {
+      const path = window.location.pathname;
+      // Check if the path includes 'en', if so, it's English, otherwise default to French english
+      return path.includes('/fr') ? 'french' : 'english';
+    }
+
+    // Set the current language flag based on the URL
+    function setCurrentLanguage() {
+      const currentLang = getCurrentLanguage();
+      document.querySelectorAll('.language-flag').forEach(function(img) {
+        img.classList.remove('current-language');
+        if(img.id === currentLang) {
+          img.classList.add('current-language');
+        }
+      });
+    }
+
+    // Initialize the current language on page load
+    setCurrentLanguage();
+  </script>

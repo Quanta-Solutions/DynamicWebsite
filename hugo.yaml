@@ -1,0 +1,270 @@
+baseURL: ''
+title: Quanta
+TestFooter: TestFooter
+defaultContentLanguage: 'en'
+defaultContentLanguageInSubdir: false
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+paginate: 9
+darkmode_js:
+  - assets/js/darkmode.js
+enableInlineShortcodes: true
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer:
+        apostrophe: '&rsquo;'
+        disable: false
+        ellipsis: '&hellip;'
+        emDash: '&mdash;'
+        enDash: '&ndash;'
+        leftAngleQuote: '&laquo;'
+        leftDoubleQuote: '&ldquo;'
+        leftSingleQuote: '&lsquo;'
+        rightAngleQuote: '&raquo;'
+        rightDoubleQuote: '&rdquo;'
+        rightSingleQuote: '&rsquo;'
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+languages:
+  fr:
+    contentDir: content/fr
+    disabled: false
+    languageCode: fr-FR
+    languageDirection: ltr
+    title: Quanta
+    params:
+      gotoFrUrl: http://quanta.be/fr
+      iconFr: https://flagcdn.com/h60/fr.jpg
+      gotoEnUrl: http://quanta.be/
+      iconEn: https://flagcdn.com/h60/gb.jpg
+      author: Marullo Luca
+      title: "Quanta"
+      TitlePage: "Quanta - Optimisez et Automatisez vos Processus d'Entreprise"
+      moto: "Reclaim Your Time"
+      DescriptionSEO: "Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
+        vos processus business afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
+      description:
+        - text: "Votre temps est précieux ! Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
+        vos processus business afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
+        - text: "Si vous en avez assez de passer du temps sur des tâches numériques redondantes, nous avons une solution pour vous !"
+      disable_theme_toggle: false
+      disable_stay_uptodate: false
+
+      p1:
+        heading: "Nos Services"
+        SubHeading: ""
+        image: "images/pages/SecondImage.webp"
+        content:
+          - SubHeading: "Automation/Integration des processus"
+          - text: "Nos solutions intelligentes permettent de simplifier vos processus commerciaux et permettent d'intégrer différents systèmes et applications."
+          - SubHeading: "Traitement Intelligent des Documents"
+          - text: "Ces outils, aussi appelées IDP pour Intelligent Document Processing extraient, classifient et traitent les informations à partir de documents non structurés tels que les factures, les contrats, les formulaires et les e-mails."
+          - SubHeading: "Applications personnalisées"
+          - text: "Nous créons des applications personnalisées adaptées à vos besoins et exigences. Nous développons des solutions efficaces et conviviales qui améliorent la productivité, automatisent les tâches ou offrent des fonctionnalités qui ne se retrouvant pas dans des logiciels prêts à l'emploi."
+      p2:
+        heading: "Pourquoi nous ?"
+        image: "images/pages/Logotest.png"
+        Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. 
+        Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, 
+        we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. 
+        This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
+        content:
+          - text: "Nous souhaitons établir des relations de longue durée basées sur la confiance. Nous sommes là pour offrir des conseils éclairés 
+          et impartiaux. 
+          Si nous pouvons établir un partenariat, nous vous guiderons tout au long du processus. Sinon, nous nous séparerons sans aucune obligation. 
+          Nous voulons vous proposer des projets taillés pour le succès, en priorisant vos besoins commerciaux et votre potentiel de croissance."
+          - SubHeading: "Un partenariat à long terme"
+          - text: "Notre objectif principal est de créer des solutions qui peuvent apporter une valeur maximale en fonctionnant sur le long terme. 
+          Pour cela, nous examinerons minutieusement vos besoins et agirons en tant que conseiller privilégié tout au long du parcours."
+          - SubHeading: "Un support proactif"
+          - text: "Nos solutions sont monitorées et maintenues de manière proactive afin que vous obteniez le maximum de leurs temps de fonctionnement."
+          - SubHeading: "Pas de surprises au niveau du budget !"
+          - text: "Si votre temps est précieux, votre argent l'est encore plus. 
+          Avec Quanta, le prix dont nous conviendrons sera le prix que vous paierez. Contactez-nous pour en savoir plus sur notre modèle tarifaire."
+      p3:
+        heading: "Contact"
+        content:
+          - text: "Vous voulez reprendre le contrôle de votre temps dès aujourd'hui ? Laissez-nous un message ! 
+          Nous organiserons une réunion et vous expliquerons en détail nos services, notre vision et notre modèle tarifaire.
+           Cette consultation est toujours gratuite et n'impose aucune obligation ou engagement."
+        action: "#"
+        MailLabel: "Votre Email"
+        MailPlaceholder: "Mail.Exemple@exemple.com"
+        SubjectLabel: "Sujet"
+        SubjectPlaceholder: "En savoir plus au sujet de Quanta"
+        MessageLabel: "Votre message"
+        MessagePlaceholder: "Laisser un commentaire....."
+        ButtonLabel: "Envoyer"
+        FromSubmitMessage: "Merci pour le message! Nos experts vous contacterons dès que possible. :)"
+      social_media:
+        github:
+          enabled: true
+          icon_pack: fab
+          url: 'https://github.com/nusserstudios'
+        linkedin:
+          enabled: true
+          url: 'https://linkedin.com/company/quanta-reclaim-your-time'
+    
+
+    weight: 1
+  en:
+    disabled: false
+    languageCode: en-US
+    languageDirection: ltr
+    languageName: English
+    title: Quanta
+    params:
+      gotoFrUrl: http://quanta.be/fr
+      gotoEnUrl: http://quanta.be/
+      author: Marullo Luca
+      moto: "Reclaim Your Time"
+      title: "Quanta"
+      TitlePage: "Quanta - Streamline and Automate your processes"
+      DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your processes in order to free up your time to focus on growth and innovation."
+      description:
+        - text: "Your time is more valuable than ever! At Quanta, we provide custom solutions designed to streamline and automate your processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
+        - text: "If you're tired of spending time on redundant digital tasks, we have a solution for you!"
+      disable_theme_toggle: false
+      disable_stay_uptodate: false
+
+      p1:
+        heading: "Our Services"
+        SubHeading: "Process automation/integration"
+        image: "images/pages/SecondImage.webp"
+        content:
+          - SubHeading: "Process Automation/Integration"
+          - text: "Our smart solutions can help streamline your business processes and integrate various systems and applications."
+          - SubHeading: "Intelligent Document Processing"
+          - text: "These solutions extract, classify, and process information from unstructured documents like invoices, contracts, forms, and emails."
+          - SubHeading: "Custom Applications"
+          - text: "We create custom applications tailored to your specific business needs and requirements. We develop efficient, user-friendly solutions that enhance productivity, automate tasks, or enable new functionalities not readily available in off-the-shelf software."
+      p2:
+        heading: "Why us."
+        image: "images/pages/Logotest.png"
+        Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
+        content:
+          - text: "At Quanta, we believe in building relationships based on trust and value. We are here to offer informed and unbiased advice. If we can build a partnership, we’ll guide you through the process. If not, we part ways with no obligations. We want to offer you projects with a clear path to success, prioritizing your business needs and potential for growth."
+          - SubHeading: "Long term partnership"
+          - text: "Our foremost objective is to create solutions that can add maximum value by running for a long time. For that we will thoroughly review your requirements and act as a preferred advisor on your path to success."
+          - SubHeading: "Proactive support"
+          - text: "Our solutions are monitored are maintained proactively so that you get the maximum uptime and value."
+          - SubHeading: "No budget overrun!"
+          - text: "If your time is precious, your money is even more so. With Quanta, the price you get is the price you’ll pay, period. 
+                    Contact us to know more about our pricing model."
+      p3:
+        heading: "Contact"
+        content:
+          - text: "Want to start reclaiming your time today? Leave us a message! We will set up a meeting and explain our services, vision, and pricing model in more details. This consultation is always free and does not impose any obligations or commitments."
+        action: "#"
+        MailLabel: "Your Email"
+        SubjectLabel: "Subject"
+        MessageLabel: "Your message"
+        ButtonLabel: "Send Message"
+        MailPlaceholder: "Mail.Exemple@exemple.com"
+        SubjectPlaceholder: "Inquiry about Quanta Services"
+        MessagePlaceholder: "Leave a comment..."
+        FromSubmitMessage: "Thanks for the message! Our exert will contact you as soon as possible. :)"
+      social_media:
+        github:
+          enabled: true
+          url: 'https://github.com/nusserstudios'
+        facebook:
+          enabled: true
+          url: 'https://facebook.com/nusserstudios'
+        instagram:
+          enabled: true
+          url: 'https://instagram.com/nusserstudios'
+        twitter:
+          enabled: true
+          url: '@nusserstudios'
+    weight: 2
+   
+
+menu:
+  main:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+  categories:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+  dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    anonymizeIP: true
+    disable: true
+    respectDoNotTrack: false
+    useSessionStorage: false
+  instagram:
+    disable: true
+    simple: false
+  twitter:
+    disable: true
+    enableDNT: false
+    simple: false
+  vimeo:
+    disable: true
+    enableDNT: false
+    simple: false
+  youtube:
+    disable: true
+    privacyEnhanced: true
+social_media: "test"
+    
+module:
+  hugoVersion:
+    extended: true
+    min: "0.104.0"

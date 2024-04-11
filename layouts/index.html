@@ -1,0 +1,217 @@
+{{ define "main" }}
+<main class="main">
+    <div class="bg-gray-900">
+        <div class="max-w-screen-xl px-4 py-8 mx-auto">
+            <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
+                <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+                    <h1 class="mb-2 text-4xl font-medium leading-none tracking-tight text-Quanta-title dark:text-Quanta-title md:text-5xl xl:text-6xl">
+                        {{ .Site.Params.title }}
+                    </h1>
+                    <div class="space-Quanta">
+                    <h2 class="pb-2 text-3xl font-light text-Quanta dark:text-Quanta md:text-4xl">
+                        {{ .Site.Params.Moto }}
+                    </h2>
+                    <div class="space-y-6" >
+                        <p class="max-w-xl mx-auto mb-6 font-normal text-Quanta-Light dark:text-Quanta-Light lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                            {{ range .Site.Params.description}}
+                            <p class="text-lg text-Quanta-Light dark:text-Quanta-Light">
+                                {{ .text }}
+                            </p>
+                            {{ end }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-span-6">
+                    {{ $hero := resources.GetMatch "images/pages/FirstImage.png" }}
+
+                    {{ $thumb := ($hero.Fill "400x400 webp q90") }}
+                    {{ $large := ($hero.Fill "576x576 webp q90") }}
+
+                    <img srcset="
+                        {{- with $thumb.RelPermalink -}}{{.}} 400w{{- end -}}
+                        {{- with $large.RelPermalink -}}, {{.}} 576w{{- end -}}" src="{{ $hero.RelPermalink }}" width="100%" height="" alt="TailBliss Hero" class="w-full max-w-xl mx-auto rounded-lg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- More main page content here... -->
+
+    <!-- Our mission section -->
+    <div class="relative my-4">
+        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
+            <div class="relative sm:py-8 lg:py-0">
+                <div aria-hidden="true" class="hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen">
+                    <div class="absolute inset-y-0 w-full bg-gray-900 right-1/2 rounded-r-3xl lg:right-72"></div><svg class="absolute -ml-3 top-8 left-1/2 lg:-right-8 lg:left-auto lg:top-12" width="404" height="392" fill="none" viewBox="0 0 404 392" loading="lazy">
+                        <defs>
+                            <pattern id="02f20b47-fd69-4224-a62a-4c9de5c763f7" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-Quanta-title dark:text-Quanta-title" fill="currentcolor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="392" fill="url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)"></rect>
+                    </svg>
+                </div>
+                <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
+                    <div class="overflow-hidden shadow-xl rounded-2xl">
+                        {{ $p1image := resources.Get .Site.Params.P1.Image }}
+                        {{ with $p1image }}
+                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
+                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-0">
+                <div class="md:pt-12 sm:pt-6 ">
+                    <h2 class="mb-2 text-4xl font-medium leading-none tracking-tight text-Quanta-title dark:text-Quanta-title md:text-5xl xl:text-6xl">
+                        {{ .Site.Params.P1.Heading }}
+                    </h2>
+                    <div class="space-Quanta">
+                        <div class="max-w-xl mb-6 font-normal text-Quanta-Light dark:text-Quanta-Light lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                            {{ range .Site.Params.P1.Content }}
+                            <h2 class="text-3xl font-light text-Quanta dark:text-Quanta md:text-4xl">
+                                {{ .SubHeading }}
+                            </h2>
+                            <p class="pb-4 text-lg text-Quanta-Light dark:text-Quanta-Light">
+                                {{ .text }}
+                            </p>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Us section -->
+    <div class="overflow-hidden sm:pt-6 lg:relative my-4">
+        <div class="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-12 lg:px-8">
+            <div>
+                <div class="md:mt-8">
+                    <div class="mt-6 sm:max-w-xl">
+                        <h2 class="mb-2 text-4xl font-medium leading-none tracking-tight text-Quanta-title dark:text-Quanta-title md:text-5xl xl:text-6xl">
+                            {{ .Site.Params.P2.Heading }}
+                        </h2>
+                        <div class="space-Quanta">
+                            <div class="max-w-xl mb-6 font-normal text-Quanta-Light dark:text-Quanta-Light lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                                {{ range .Site.Params.P2.Content }}
+                                <h2 class="text-3xl font-light text-Quanta dark:text-Quanta md:text-4xl">
+                                    {{ .SubHeading }}
+                                </h2>
+                                <p class="pb-4 text-lg text-Quanta-Light dark:text-Quanta-Light">
+                                    {{ .text }}
+                                </p>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+            <div class="md:py-12 sm:relative sm:mt-12 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <div class="hidden sm:block">
+                    <div class="absolute inset-y-0 w-screen left-1/2 rounded-l-3xl bg-gray-900/10 dark:bg-gray-900/10 lg:left-80 lg:right-0 lg:w-full"></div>
+                    <!-- <svg class="absolute -mr-3 top-8 right-1/2 lg:left-0 lg:m-0" width="404" height="300" fill="none" viewBox="0 0 404 300" loading="lazy">
+                        <defs>
+                            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="10" y="10" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <rect x="0" y="0" width="4" height="4" class="text-Quanta-title dark:text-Quanta-title" fill="currentcolor"></rect>
+                            </pattern>
+                        </defs>
+                        <rect width="404" height="300" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659) "></rect>
+                    </svg> -->
+                </div>
+                <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
+                    <div class="overflow-hidden shadow-xl rounded-2xl">
+                        <!-- {{ $p1image := resources.Get .Site.Params.P2.Image }}
+                        {{ with $p1image }}
+                        {{ with .Resize (printf "%dx%d webp q90" .Width .Height) }}
+                        <img imgh src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" class="w-full h-auto" alt="P1" loading="lazy" />
+                        {{ end }}
+                        {{ end }} -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact -->
+    <section class="my-3  sm:pt-6 lg:pb-24 bg-gray-900">
+    <div class="pb-2 max-w-screen-md px-4 mx-auto ">
+        <h2 class="mb-2 text-4xl text-center font-medium leading-none tracking-tight text-Quanta-title dark:text-Quanta-title md:text-5xl xl:text-6xl">
+            {{ .Site.Params.P3.Heading }}
+        </h2>
+        <div class=" mt-6">
+            {{ range .Site.Params.P3.Content }}
+            <p class="font-light text-center text-Quanta lg:mb-16 dark:text-Quanta sm:text-xl">
+                {{ .text }}
+            </p>
+            {{ end }}
+        </div>
+        <!--https://formspree.io/f/xpzvjnzb  https://formsubmit.co/luca.marullo@quanta.be-->
+        <form id="QuantaFrom" name="contact" action="https://formspree.io/f/xpzvjnzb" method="POST" class="space-y-8">
+            <div class="my-4">
+                <label  for="IDemail" class="block mb-2 font-medium text-Quanta text-md dark:text-Quanta"><strong>{{ .Site.Params.P3.MailLabel }}:</strong></label>
+                <input type="email" id="IDemail" name="email" class="bg-gray-800 QuantaBorder shadow-sm border border-gray-300 text-Quanta text-md rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 dark:shadow-sm-light" 
+                placeholder="{{ .Site.Params.P3.MailPlaceholder }}" required>
+            </div>
+            <div class="my-4">
+                <label for="IDsubject" class="block mb-2 font-medium text-Quanta text-md dark:text-Quanta"><strong>{{ .Site.Params.P3.SubjectLabel }}:</strong></label>
+                <input id="IDsubject"  type="text" name="subject" class="bg-gray-800 QuantaBorder block w-full p-3 text-Quanta border border-gray-300 rounded-lg shadow-sm text-md focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500 dark:shadow-sm-light" 
+                placeholder="{{ .Site.Params.P3.SubjectPlaceholder }}" required>
+            </div>
+            <div class="my-4 sm:col-span-2">
+                <label for="IDmessage" class="block mb-2 font-medium text-Quanta text-md dark:text-Quanta"><strong>{{ .Site.Params.P3.MessageLabel }}:</strong></label>
+                <textarea id="IDmessage" name="message" rows="6" class="bg-gray-800 QuantaBorder block p-2.5 w-full text-md text-Quanta rounded-lg shadow-sm border border-gray-300 focus:ring-gray-500 focus:border-gray-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500" 
+                placeholder="{{ .Site.Params.P3.MessagePlaceholder }}"></textarea>
+            </div>
+            <div class="mt-6 lg:pb-16">
+                <button type="submit" 
+                class="px-5 py-3 font-bold text-center text-white dark:text-Quanta-Light bg-Quanta dark:bg-Quanta rounded-lg text-md sm:w-fit hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-900 dark:bg-gray-50 dark:hover:bg-gray-50 dark:focus:ring-gray-800">
+                {{ .Site.Params.P3.ButtonLabel }}
+                </button>
+            </div>
+        </form>
+        <div id="ThankYou" class="text-Quanta text-center hidden">
+            {{ .Site.Params.P3.FromSubmitMessage }}
+        </div>
+    </div>
+    </section>
+
+
+    <script>
+        document.getElementById('QuantaFrom').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            var form = this;
+            var formData = new FormData(form);
+            // Post the form data using Fetch API
+            fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+            }).then(response => {
+            if (response.ok) {
+                document.querySelector('#QuantaFrom').classList.add('hidden');
+                document.querySelector('#ThankYou').classList.remove('hidden');
+                form.reset();
+            } else {
+                response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) { 
+                    alert('Oops! There was a problem submitting your form');
+                }
+                });
+            }
+            })
+        };
+      </script>
+</main>
+{{ end }}
+
+
