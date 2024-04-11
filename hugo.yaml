@@ -6,7 +6,7 @@ defaultContentLanguageInSubdir: false
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
+
 paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
