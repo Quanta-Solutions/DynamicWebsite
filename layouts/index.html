@@ -8,19 +8,24 @@
                         {{ .Site.Params.title }}
                     </h1>
                     <div class="space-Quanta">
-                    <h2 class="pb-2 text-3xl font-light text-Quanta dark:text-Quanta md:text-4xl">
-                        {{ .Site.Params.Moto }}
-                    </h2>
-                    <div class="space-y-6" >
-                        <p class="max-w-xl mx-auto mb-6 font-normal text-Quanta-Light dark:text-Quanta-Light lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
-                            {{ range .Site.Params.description}}
-                            <p class="text-lg text-Quanta-Light dark:text-Quanta-Light">
-                                {{ .text }}
+                        <h2 class="pb-2 text-3xl font-light text-Quanta dark:text-Quanta md:text-4xl">
+                            {{ .Site.Params.Moto }}
+                        </h2>
+                        <div class="space-y-6" >
+                            <p class="max-w-xl mx-auto mb-6 font-normal text-Quanta-Light dark:text-Quanta-Light lg:mx-0 xl:mb-2 md:text-lg xl:text-xl">
+                                {{ range .Site.Params.description}}
+                                <p class="text-lg text-Quanta-Light dark:text-Quanta-Light">
+                                    {{ .text }}
+                                </p>
+                                {{ end }}
                             </p>
-                            {{ end }}
-                        </p>
+                        </div>
                     </div>
-                </div>
+                <button class="px-5 py-3 text-2xl text-center text-white dark:text-Quanta-Light bg-Quanta rounded-lg text-md sm:w-fit hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-900 dark:bg-gray-50 dark:hover:bg-gray-50 dark:focus:ring-gray-800">
+                    <a href="#IdContact">
+                        Contact
+                    </a>
+                </button>
             </div>
                 <div class="col-span-6">
                      <!-- 
@@ -57,7 +62,7 @@
                 </div>
                 <div class="relative w-full h-auto px-4 py-6 mx-auto sm:max-w-3xl sm:px-6 lg:px-0 lg:py-20">
                     <div class="overflow-hidden shadow-xl rounded-2xl">
-                        <img imgh src="{{ .RelPermalink }}" width="100%" height="" class="w-full h-auto" alt="P1" loading="lazy" />
+                        <img imgh src="{{ .RelPermalink }}/{{.Site.Params.P1.SecondImage}}" width="100%" height="" class="w-full h-auto" alt="P1" loading="lazy" />
                         <!-- 
                             {{ $p1image := resources.Get .Site.Params.P1.Image }}
                             {{ with $p1image }}
