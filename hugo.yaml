@@ -117,7 +117,7 @@ languages:
         github:
           enabled: true
           icon_pack: fab
-          url: 'https://github.com/nusserstudios'
+          url: 'https://github.com/Quanta-Solutions'
         linkedin:
           enabled: true
           url: 'https://linkedin.com/company/quanta-reclaim-your-time'
