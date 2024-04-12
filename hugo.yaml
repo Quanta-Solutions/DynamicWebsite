@@ -85,10 +85,6 @@ languages:
       p2:
         heading: "Pourquoi nous ?"
         image: "images/pages/Logotest.png"
-        Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. 
-        Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, 
-        we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. 
-        This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
         content:
           - text: "Nous souhaitons établir des relations de longue durée basées sur la confiance. Nous sommes là pour offrir des conseils éclairés 
           et impartiaux. 
@@ -188,16 +184,12 @@ languages:
       social_media:
         github:
           enabled: true
+          icon_pack: fab
           url: 'https://github.com/nusserstudios'
-        facebook:
+        linkedin:
           enabled: true
-          url: 'https://facebook.com/nusserstudios'
-        instagram:
-          enabled: true
-          url: 'https://instagram.com/nusserstudios'
-        twitter:
-          enabled: true
-          url: '@nusserstudios'
+          url: 'https://linkedin.com/company/quanta-reclaim-your-time'
+    
     weight: 2
    
 
