@@ -6,7 +6,7 @@ defaultContentLanguageInSubdir: false
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-
+canonifyURLs: true
 paginate: 9
 darkmode_js:
   - assets/js/darkmode.js
@@ -74,7 +74,7 @@ languages:
       p1:
         heading: "Nos Services"
         SubHeading: ""
-        SecondImage: "https://quanta-solutions.github.io/DynamicWebsite/images/pages/SecondImage.png"
+        SecondImage: "/images/pages/SecondImage.png"
         content:
           - SubHeading: "Automation/Integration des processus"
           - text: "Nos solutions intelligentes permettent de simplifier vos processus commerciaux et permettent d'intégrer différents systèmes et applications."
