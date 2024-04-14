@@ -78,7 +78,7 @@ languages:
         SecondImage: "/images/pages/SecondImage.png"
         content:
           - SubHeading: "Automation/Integration des processus"
-          - text: "Nos solutions intelligentes permettent de simplifier vos processus commerciaux et permettent d'intégrer différents systèmes et applications."
+          - text: "Nos solutions intelligentes peuvent aider à rationaliser et à optimiser votre travail en automatisant les tâches répétitives et en intégrant différents systèmes et applications. Elles visent à accroître l'efficacité, à réduire les erreurs et à améliorer la productivité d'une organisation en automatisant les processus manuels et en connectant des systèmes qui n'ont à priori pas de liens entre eux."
           - SubHeading: "Traitement Intelligent des Documents"
           - text: "Ces outils, aussi appelées IDP pour Intelligent Document Processing extraient, classifient et traitent les informations à partir de documents non structurés tels que les factures, les contrats, les formulaires et les e-mails."
           - SubHeading: "Applications personnalisées"
@@ -138,7 +138,7 @@ languages:
       moto: "Reclaim Your Time"
       title: "Quanta"
       TitlePage: "Quanta - Streamline and Automate your processes"
-      DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your processes in order to free up your time to focus on growth and innovation."
+      DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your processes in order to free up your time to focus on growth and innovation. "
       description:
         - text: "Your time is more valuable than ever! At Quanta, we provide custom solutions designed to streamline and automate your processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
         - text: "If you're tired of spending time on redundant digital tasks, we have a solution for you!"
@@ -152,7 +152,7 @@ languages:
         image: "images/pages/SecondImage.webp"
         content:
           - SubHeading: "Process Automation/Integration"
-          - text: "Our smart solutions can help streamline your business processes and integrate various systems and applications."
+          - text: "Our smart solutions can help streamline and optimize workflows by automating repetitive tasks and integrating various systems and applications. It aims to increase efficiency, reduce errors, and improve overall productivity within an organization by automating manual processes and connecting disparate systems to work together harmoniously."
           - SubHeading: "Intelligent Document Processing"
           - text: "These solutions extract, classify, and process information from unstructured documents like invoices, contracts, forms, and emails."
           - SubHeading: "Custom Applications"
