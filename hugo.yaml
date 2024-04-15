@@ -63,11 +63,11 @@ languages:
       moto: "Reclaim Your Time"
       FirstImage: "https://quanta-solutions.github.io/DynamicWebsite/images/pages/FirstImage.png"
       DescriptionSEO: "Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
-        vos processus business afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
+        vos processus digitaux afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
       description:
         - text: "Votre temps est précieux ! Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
-        vos processus business afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
-        - text: "Si vous en avez assez de passer du temps sur des tâches numériques redondantes, nous avons une solution pour vous !"
+        vos processus digitaux afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
+        - text: "Si vous en avez assez de passer du temps à réaliser des tâches numériques redondantes, nous avons une solution pour vous !"
       contact_button: "Contactez nous"
       disable_theme_toggle: false
       disable_stay_uptodate: false
@@ -138,9 +138,9 @@ languages:
       moto: "Reclaim Your Time"
       title: "Quanta"
       TitlePage: "Quanta - Streamline and Automate your processes"
-      DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your processes in order to free up your time to focus on growth and innovation. "
+      DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your software processes in order to free up your time to focus on growth and innovation. "
       description:
-        - text: "Your time is more valuable than ever! At Quanta, we provide custom solutions designed to streamline and automate your processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
+        - text: "Your time is more valuable than ever! At Quanta, we provide custom solutions designed to streamline and automate your software processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
         - text: "If you're tired of spending time on redundant digital tasks, we have a solution for you!"
       contact_button: "Contact us"
       disable_theme_toggle: false
