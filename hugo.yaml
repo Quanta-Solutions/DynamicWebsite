@@ -158,7 +158,7 @@ languages:
           - SubHeading: "Custom Applications"
           - text: "We create custom applications tailored to your specific business needs and requirements. We develop efficient, user-friendly solutions that enhance productivity, automate tasks, or enable new functionalities not readily available in off-the-shelf software."
       p2:
-        heading: "Why us."
+        heading: "Why us?"
         image: "images/pages/Logotest.png"
         Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
         content:
