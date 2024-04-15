@@ -4,10 +4,11 @@
 </title>
 <meta charset="utf-8">
 <meta name="description" content="{{ .Site.Params.DescriptionSEO }}" />
-<meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta itemprop="name" content="{{ .Title }} | {{ .Site.Title }}" />
-<meta name="application-name" content="{{ .Title }} | {{ .Site.Title }}" />
+<meta property="og:title" content="{{ .TitlePage }}" />
+<meta name="twitter:title" content="{{ .TitlePage }}" />
+<meta itemprop="name" content="{{ .TitlePage }}" />
+<meta name="application-name" content="{{ .TitlePage }}" />
+
 <meta property="og:description"
       content="{{ .Site.Params.DescriptionSEO }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
@@ -15,6 +16,6 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="{{ if .Params.featured_image }}{{ .Params.featured_image | relURL }}{{ else }}{{ .Site.Params.og_image | relURL }}{{ end }}" />
 <meta property="og:image:secure_url" content="{{ if .Params.featured_image }}{{ .Params.featured_image | absURL }}{{ else }}{{ .Site.Params.og_image | absURL }}{{ end }}" />
-<meta property="og:type" content="website" />
+g:type" content="website" />
 
 <link rel="canonical" href="http://quanta.be/" />
