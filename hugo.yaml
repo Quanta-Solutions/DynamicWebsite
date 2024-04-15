@@ -53,7 +53,7 @@ languages:
     languageDirection: ltr
     title: Quanta
     params:
-      og_image: "/images/pages/FirstImage.png"
+      
       gotoFrUrl: http://quanta.be/fr
       iconFr: https://flagcdn.com/h60/fr.jpg
       gotoEnUrl: http://quanta.be/
@@ -133,7 +133,7 @@ languages:
     languageName: English
     title: Quanta
     params:
-      og_image: "images/pages/FirstImage.png"
+      
       gotoFrUrl: http://quanta.be/fr
       gotoEnUrl: http://quanta.be/
       author: Marullo Luca
