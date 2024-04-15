@@ -133,7 +133,7 @@ languages:
     languageName: English
     title: Quanta
     params:
-      og_image: "https://quanta.be/images/pages/FirstImage.png"
+      og_image: "images/pages/FirstImage.png"
       gotoFrUrl: http://quanta.be/fr
       gotoEnUrl: http://quanta.be/
       author: Marullo Luca
