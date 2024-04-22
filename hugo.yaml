@@ -83,7 +83,7 @@ languages:
           - SubHeading: "Traitement Intelligent des Documents"
           - text: "Ces outils, aussi appelées IDP pour Intelligent Document Processing extraient, classifient et traitent les informations à partir de documents non structurés tels que les factures, les contrats, les formulaires et les e-mails."
           - SubHeading: "Applications personnalisées"
-          - text: "Nous créons des applications personnalisées adaptées à vos besoins et exigences. Nous développons des solutions efficaces et conviviales qui améliorent la productivité, automatisent les tâches ou offrent des fonctionnalités qui ne se retrouvant pas dans des logiciels prêts à l'emploi."
+          - text: "Nous créons des applications personnalisées adaptées à vos besoins et exigences. Nous développons des solutions efficaces qui améliorent la productivité, automatisent les tâches ou offrent des fonctionnalités qui ne se retrouvant pas dans des logiciels prêts à l'emploi."
       p2:
         heading: "Pourquoi nous ?"
         image: "images/pages/Logotest.png"
