@@ -66,9 +66,9 @@ languages:
       DescriptionSEO: "Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
         vos processus digitaux afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
       description:
-        - text: "Votre temps est précieux ! Chez Quanta, nous proposons des solutions personnalisées conçues pour rationaliser et automatiser 
-        vos processus digitaux afin de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
-        - text: "Si vous en avez assez de passer du temps à réaliser des tâches numériques redondantes, nous avons une solution pour vous !"
+        - text: "Votre temps est précieux ! 
+          Chez Quanta, nous offrons un service dédié à la rationalisation et l'automation de vos processus digitaux, vous permettant de libérer votre temps pour vous concentrer sur la croissance et l'innovation."
+        - text: "Si vous en avez assez de passer du temps à réaliser des tâches numériques redondantes, nous avons sommes la solution pour vous aider!"
       contact_button: "Contactez nous"
       disable_theme_toggle: false
       disable_stay_uptodate: false
@@ -80,26 +80,29 @@ languages:
         content:
           - SubHeading: "Automation/Integration des processus"
           - text: "Nos solutions intelligentes peuvent aider à rationaliser et à optimiser votre travail en automatisant les tâches répétitives et en intégrant différents systèmes et applications. Elles visent à accroître l'efficacité, à réduire les erreurs et à améliorer la productivité d'une organisation en automatisant les processus manuels et en connectant des systèmes qui n'ont à priori pas de liens entre eux."
-          - SubHeading: "Traitement Intelligent des Documents"
-          - text: "Ces outils, aussi appelées IDP pour Intelligent Document Processing extraient, classifient et traitent les informations à partir de documents non structurés tels que les factures, les contrats, les formulaires et les e-mails."
           - SubHeading: "Applications personnalisées"
           - text: "Nous créons des applications personnalisées adaptées à vos besoins et exigences. Nous développons des solutions efficaces qui améliorent la productivité, automatisent les tâches ou offrent des fonctionnalités qui ne se retrouvant pas dans des logiciels prêts à l'emploi."
+          - SubHeading: "Integration rationelle de l'intelligence artificielle"
+          - text: "L'intelligence artificielle est aujourd'hui une réalité incontournable qui peut transformer votre entreprise en améliorant l'efficacité et en réduisant les coûts. 
+                    Pour maximiser son potentiel, elle doit être intégrée de manière stratégique, en tenant compte des besoins spécifiques de votre secteur.
+                    Nous vous aiderons à évaluer son utilité dans votre entreprise et à l'implémenter efficacement pour obtenir des résultats tangibles et durables. 
+                    Nos solutions sur mesure garantissent une intégration fluide et alignée avec vos objectifs commerciaux"
       p2:
         heading: "Pourquoi nous ?"
         image: "images/pages/Logotest.png"
         content:
-          - text: "Nous souhaitons établir des relations de longue durée basées sur la confiance. Nous sommes là pour offrir des conseils éclairés 
-          et impartiaux. 
-          Si nous pouvons établir un partenariat, nous vous guiderons tout au long du processus. Sinon, nous nous séparerons sans aucune obligation. 
-          Nous voulons vous proposer des projets taillés pour le succès, en priorisant vos besoins commerciaux et votre potentiel de croissance."
-          - SubHeading: "Pas de surprises au niveau du budget !"
-          - text: "Si votre temps est précieux, votre argent l'est encore plus. 
-          Avec Quanta, le prix dont nous conviendrons sera le prix que vous paierez. Contactez-nous pour en savoir plus sur notre modèle tarifaire."
-          - SubHeading: "Un support proactif"
-          - text: "Le support d'une application se révèle souvent coûteux ! C'est pourquoi nos solutions sont monitorées et maintenues de manière proactive. Cette approche garantit que les problèmes potentiels sont rapidement identifiés et résolus avant de s'aggraver, garantissant un temps de fonctionnement maximal et une productivité ininterrompue."
+          - text: "Chez Quanta, notre équipe est dirigée par deux jeunes entrepreneurs passionnés, déterminés à apporter une réelle valeur à nos clients. 
+                    Nous nous distinguons par notre qualité de conseil et notre capacité à proposer des solutions parfaitement adaptées à vos besoins spécifiques.
+                    Notre objectif est de faire une différence tangible dans votre entreprise en offrant des conseils stratégiques et des solutions innovantes qui maximisent votre potentiel."
+          - SubHeading: "Analyse de vos besoins"
+          - text: "Nous travaillons en étroite collaboration pour explorer vos processus et comprendre vos attentes ainsi que les défis liés à votre métier. 
+                    Ensemble, nous identifions précisément vos besoins et déterminons les solutions qui y répondent le mieux. 
+                    Grâce à cette approche, nous garantissons que chaque projet entrepris apportera une réelle plus-value à votre entreprise. 
+                    Notre méthode sur mesure assure que chaque solution est parfaitement intégrée au monde réel dans lequel vous évoluez."
           - SubHeading: "Un partenariat à long terme"
-          - text: "Notre objectif principal est de créer des solutions qui peuvent apporter une valeur maximale en fonctionnant sur le long terme. 
-          Pour cela, nous examinerons minutieusement vos besoins et agirons en tant que conseiller privilégié tout au long du parcours."
+          - text: "Notre objectif principal est de créer des solutions qui peuvent apporter une valeur maximale en fonctionnant sur le long terme. Pour cela, nous examinerons minutieusement vos besoins et agirons en tant que conseiller privilégié tout au long du parcours."
+          - SubHeading: "Pas de surprises au niveau du budget !"
+          - text: "Si votre temps est précieux, votre argent l'est encore plus. Avec Quanta, le prix dont nous conviendrons sera le prix que vous paierez. Contactez-nous pour en savoir plus sur notre modèle tarifaire."
       p3:
         heading: "Contact"
         content:
@@ -142,7 +145,7 @@ languages:
       TitlePage: "Quanta - Streamline and Automate your processes"
       DescriptionSEO: "At Quanta, we offer solutions designed to streamline and automate your software processes in order to free up your time to focus on growth and innovation. "
       description:
-        - text: "Your time is more valuable than ever! At Quanta, we provide custom solutions designed to streamline and automate your software processes and reclaim valuable hours, freeing you up to focus on growth and innovation."
+        - text: "Your time is more valuable than ever! At Quanta, we offer a service dedicated to streamlining and automating your digital processes, allowing you to free up your time to focus on growth and innovation."
         - text: "If you're tired of spending time on redundant digital tasks, we have a solution for you!"
       contact_button: "Contact us"
       disable_theme_toggle: false
@@ -154,24 +157,23 @@ languages:
         image: "images/pages/SecondImage.webp"
         content:
           - SubHeading: "Process Automation/Integration"
-          - text: "Our smart solutions can help streamline and optimize workflows by automating repetitive tasks and integrating various systems and applications. It aims to increase efficiency, reduce errors, and improve overall productivity within an organization by automating manual processes and connecting disparate systems to work together harmoniously."
-          - SubHeading: "Intelligent Document Processing"
-          - text: "These solutions extract, classify, and process information from unstructured documents like invoices, contracts, forms, and emails."
+          - text: "Our intelligent solutions can help streamline and optimize your work by automating repetitive tasks and integrating different systems and applications. They aim to increase efficiency, reduce errors, and improve organizational productivity by automating manual processes and connecting systems that may not initially seem related."
           - SubHeading: "Custom Applications"
-          - text: "We create custom applications tailored to your specific business needs and requirements. We develop efficient, user-friendly solutions that enhance productivity, automate tasks, or enable new functionalities not readily available in off-the-shelf software."
+          - text: "We create custom applications tailored to your needs and requirements. We develop effective solutions that enhance productivity, automate tasks, or offer functionalities not available in off-the-shelf software."
+          - SubHeading: "Rational Integration of Artificial Intelligence"
+          - text: "Artificial intelligence is now an essential reality that can transform your business by improving efficiency and reducing costs. To maximize its potential, it must be strategically integrated, taking into account the specific needs of your sector. We will help you assess its utility in your business and implement it effectively to achieve tangible and sustainable results. Our custom solutions ensure a smooth integration aligned with your business objectives."
       p2:
         heading: "Why us?"
         image: "images/pages/Logotest.png"
-        Previous Why text: "At Quanta, we believe in building relationships based on trust and value. That's why we offer free initial consultations. Our experts are here to listen, understand your specific challenges, and offer informed advice. If automation is the right fit for your needs, we’ll guide you through the process. If not, we part ways with no obligations, leaving the door open for future collaboration when the time is right. This approach ensures that we engage in projects with a clear path to success, prioritizing your business needs and potential for growth."
+        Previous Why text: "Our team is led by two young, passionate entrepreneurs committed to delivering real value to our clients. We stand out for our quality of advice and our ability to offer solutions perfectly suited to your specific needs. Our goal is to make a tangible difference in your business by providing strategic advice and innovative solutions that maximize your potential."
         content:
-          - text: "At Quanta, we believe in building relationships based on trust and value. We are here to offer informed and unbiased advice. If we can build a partnership, we’ll guide you through the process. If not, we part ways with no obligations. We want to offer you projects with a clear path to success, prioritizing your business needs and potential for growth."
-          - SubHeading: "No budget overrun!"
-          - text: "If your time is precious, your money is even more so. With Quanta, the price you get is the price you’ll pay, period. 
-                    Contact us to know more about our pricing model."
-          - SubHeading: "Proactive support"
-          - text: "Support can be costly! That's why, our solutions are monitored are maintained proactively. This approach ensures that potential issues are swiftly identified and addressed before they escalate, guaranteeing maximum uptime and uninterrupted productivity."
-          - SubHeading: "Long term partnership"
-          - text: "Our foremost objective is to create solutions that can add maximum value by running for a long time. For that we will thoroughly review your requirements and act as a preferred advisor on your path to success."
+          - text: "Our team is led by two young, passionate entrepreneurs committed to delivering real value to our clients. We stand out for our quality of advice and our ability to offer solutions perfectly suited to your specific needs. Our goal is to make a tangible difference in your business by providing strategic advice and innovative solutions that maximize your potential."
+          - SubHeading: "Process analysis"
+          - text: "We work closely with you to explore your processes and understand your expectations and the challenges related to your business. Together, we precisely identify your needs and determine the solutions that best address them. With this approach, we ensure that every project undertaken brings real added value to your business. Our custom method ensures that each solution is perfectly integrated into the real-world environment in which you operate."
+          - SubHeading: "A Long-Term Partnership"
+          - text: "Our primary goal is to create solutions that provide maximum value by functioning over the long term. To achieve this, we will thoroughly examine your needs and act as your trusted advisor throughout the journey."
+          - SubHeading: "No Surprises over budget!"
+          - text: "If your time is precious, your money is even more so. With Quanta, the price we agree upon will be the price you pay. Contact us to learn more about our pricing model."
       p3:
         heading: "Contact"
         content:
